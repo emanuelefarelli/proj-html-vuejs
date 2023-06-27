@@ -1,12 +1,14 @@
 <template>
-    <AppJumbotron/>
-    <AppServices/>
-    <AppPhotobook/>
-    <AppCourses/>
-    <AppFirstStep/>
-    <AppEvents/>
-    <AppNews/>
-    <AppFooter/>
+    <main>
+        <AppJumbotron/>
+        <AppServices/>
+        <AppPhotobook/>
+        <AppCourses/>
+        <AppFirstStep/>
+        <AppEvents/>
+        <AppNews/>
+        <AppFooter/>
+    </main>
 </template>
     
 <script>
@@ -18,12 +20,12 @@
     import AppEvents from './AppEvents.vue'
     import AppNews from './AppNews.vue'
     import AppFooter from './AppFooter.vue';
+    
 
     export default{
         name: 'AppMain',
         data(){
             return{
-    
             }
         },
         components: {
@@ -35,8 +37,12 @@
             AppEvents,
             AppNews,
             AppFooter
+        },
+        
+        methods: {
         }
     }
+
 </script>
     
 <style lang="scss" scoped>
