@@ -17,7 +17,6 @@
     
 <style lang="scss" scoped>
     section.first-step{
-        width: 100%;
         height: 25vh;
     }
 </style>

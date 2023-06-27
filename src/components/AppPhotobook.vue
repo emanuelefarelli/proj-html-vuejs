@@ -17,7 +17,6 @@
     
 <style lang="scss" scoped>
     section.photobook{
-        width: 100%;
         height: 50vh;
     }
 </style>

@@ -17,7 +17,6 @@
     
 <style lang="scss" scoped>
     section.services{
-        width: 100%;
         height: 90vh;
     }
 </style>
