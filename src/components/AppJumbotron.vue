@@ -81,11 +81,22 @@
             }
             button.enroll{
                 background-color: $yellowColor;
+                border: 3px solid $yellowColor;
+            }
+            button.enroll:hover{
+                background-color: $darkGreyColor;
+                border: 3px solid $darkGreyColor;
+                color: white;
             }
             button.learn{
                 background-color: rgba(0, 0, 0, 0);
                 color: white;
                 border: 3px solid white;
+            }
+            button.learn:hover{
+                background-color: $yellowColor;
+                color: black;
+                border: 3px solid $yellowColor;
             }
         }
         div.button{

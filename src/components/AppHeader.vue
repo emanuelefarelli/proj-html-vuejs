@@ -1,24 +1,22 @@
 <template>
     <header :class = "(this.PageStart === true)? '' : 'header-full'">
-        <transition name="fade">
-            <div class="header-up" v-if="this.PageStart === true">
-                <div>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>
-                        6767 Santa Monica Blvd,Los Angeles,CA 90038
-                    </span>
-                </div>
-                <div>
-                    <i class="fa-solid fa-phone"></i>
-                    <span>
-                        Call Now <span>123-456-7890</span>
-                    </span>
-                    <button>
-                        Donate
-                    </button>
-                </div>
+        <div class="header-up" v-if="this.PageStart === true">
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>
+                    6767 Santa Monica Blvd,Los Angeles,CA 90038
+                </span>
             </div>
-        </transition>
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <span>
+                    Call Now <span>123-456-7890</span>
+                </span>
+                <button>
+                        Donate
+                </button>
+            </div>
+        </div>
         <div class="header-bottom">
             <div>
                 <img src="https://template186841.motopreview.com/mt-demo/186800/186841/mt-content/uploads/2021/06/mt-2236-home-logo.png" alt="Chess School Logo">
@@ -79,7 +77,7 @@
             }
         },
         mounted(){
-            globalThis.addEventListener("scroll", this.IsPageUp)
+            globalThis.addEventListener("scroll", this.IsPageUp);
         }
     }
 </script>
