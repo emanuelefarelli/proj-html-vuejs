@@ -1,12 +1,12 @@
 <template>
-    <footer>
-        <h1>Footer</h1>
-    </footer>
+    <section class="first-step">
+        <h1>First step</h1>
+    </section>
 </template>
     
 <script>
     export default{
-        name: 'AppFooter',
+        name: 'AppFirstStep',
         data(){
             return{
     
@@ -16,7 +16,8 @@
 </script>
     
 <style lang="scss" scoped>
-    footer{
-        height: 50vh;
+    section.first-step{
+        width: 100%;
+        height: 25vh;
     }
 </style>

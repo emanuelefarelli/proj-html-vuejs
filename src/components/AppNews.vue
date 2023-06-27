@@ -1,12 +1,12 @@
 <template>
-    <footer>
-        <h1>Footer</h1>
-    </footer>
+    <section class="news">
+        <h1>News</h1>
+    </section>
 </template>
     
 <script>
     export default{
-        name: 'AppFooter',
+        name: 'AppNews',
         data(){
             return{
     
@@ -16,7 +16,8 @@
 </script>
     
 <style lang="scss" scoped>
-    footer{
+    section.news{
+        width: 100%;
         height: 50vh;
     }
 </style>

@@ -1,5 +1,7 @@
 <template>
-    <h1>Header</h1>
+    <header>
+        <h1>Header</h1>
+    </header>
 </template>
 
 <script>
@@ -14,5 +16,9 @@
 </script>
 
 <style lang="scss" scoped>
-
+    header{
+        position: fixed;
+        top: 1rem;
+        z-index: 1;
+    }
 </style>
