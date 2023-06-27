@@ -73,10 +73,6 @@
                 padding: 2rem 0;
             }
             button{
-                padding: 1rem 3rem;
-                margin: 0.5rem;
-                border: none;
-                border-radius: 0.5rem;
                 font-size: $FontSizeM;
             }
             button.enroll{
@@ -86,7 +82,7 @@
             button.enroll:hover{
                 background-color: $darkGreyColor;
                 border: 3px solid $darkGreyColor;
-                color: white;
+                color: white; 
             }
             button.learn{
                 background-color: rgba(0, 0, 0, 0);

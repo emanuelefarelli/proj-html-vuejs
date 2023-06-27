@@ -70,7 +70,6 @@
         },
         methods: {
             IsPageUp(){
-                console.log(globalThis.scrollY);
                 if(globalThis.scrollY <= 0){
                     this.PageStart = true;
                 }else{this.PageStart = false};
