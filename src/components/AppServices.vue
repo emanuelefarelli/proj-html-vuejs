@@ -131,7 +131,7 @@
                 font-size: $FontSizeML;
             }
             p.subtitle{
-                font-size: $FontSizeML;
+                font-size: $FontSizeM;
             }
             div{
                 width: calc(100% / 3);
