@@ -78,4 +78,7 @@
             background-color: $darkGreyColor;
         }
     }
+    section.card:hover{
+        box-shadow: rgba(50, 50, 93, 0.425) 0px 13px 27px -5px, rgba(0, 0, 0, 0.473) 0px 8px 16px -8px;
+    }
 </style>
