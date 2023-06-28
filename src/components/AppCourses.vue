@@ -7,6 +7,7 @@
             To keep up with the constantly rising standards of play       
         </p>
         <ul>
+            <!-- COMPONENTE SINGLECOURSE -->
             <li v-for="course in coursesList">
                 <SingleCourse
                     :course = "course"
@@ -25,6 +26,8 @@
         name: 'AppCourses',
         data(){
             return{
+                
+                // LISTA DEI CORSI
                 coursesList:[
                     {
                         img: 'mt-2236-home-img1.jpg',

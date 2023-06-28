@@ -1,5 +1,7 @@
 <template>
     <header :class = "(this.PageStart === true)? '' : 'header-full'">
+
+        <!-- PARTE SUPERIORE HEADER -->
         <div class="header-up" v-if="this.PageStart === true">
             <div>
                 <i class="fa-solid fa-location-dot"></i>
@@ -17,6 +19,8 @@
                 </button>
             </div>
         </div>
+
+        <!-- PARTE INFERIORE HEADER -->
         <div class="header-bottom">
             <div>
                 <img src="https://template186841.motopreview.com/mt-demo/186800/186841/mt-content/uploads/2021/06/mt-2236-home-logo.png" alt="Chess School Logo">
@@ -71,6 +75,8 @@ import { store } from '../store.js';
             }
         },
         methods: {
+
+            // FUNZIONE PER VERIFICARE SE LA PAGINA E' ALL'INIZIO
             IsPageUp(){
                 if(globalThis.scrollY <= 0){
                     store.PageStart = true;

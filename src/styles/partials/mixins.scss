@@ -1,3 +1,4 @@
+// FLEX
 @mixin flex($direction: row,$justifyContent: center, $alignItems: center, $wrap: wrap){
     display: flex;
     flex-direction: $direction;
@@ -5,6 +6,8 @@
     align-items: $alignItems;
     flex-wrap: $wrap;
 }
+
+//MARGIN AUTO 
 @mixin marginAuto($height: 0,$width: auto){
     margin: $height $width;
 }

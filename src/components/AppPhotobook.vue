@@ -1,10 +1,13 @@
 <template>
+    <!-- CAROSELLO A TUTTA PAGINA -->
     <FullCarousel v-if="FullScreenImgs === true"
         :imgList = "imgList"
         :activeIndex = "activeIndex"
         @imgChange="changeActiveIndex"
         @carouselClose="this.FullScreenImgs = false"
     />
+
+    <!-- SEZIONE VISIBILE NEL MAIN -->
     <section class="photobook">
         <div class="carousel">
             <div class="thumbnail" v-for="imgObj in imgList">
@@ -69,10 +72,13 @@
             getImagePath: function(img) {
                 return new URL(`../assets/img/${img}`, import.meta.url).href;
             },
+
+            // FUNZIONE PER APRIRE IL COMPONENTE FULLCAROUSEL.VUE
             openFullScreenImg(index){
                 this.activeIndex = index;
                 this.FullScreenImgs = true;
             },
+            // FUNZIONE CHE CAMBIA LA FOTO VISUALIZZATA A PIENO SCHERMO
             changeActiveIndex(direction){
                 if(direction === true){
                     this.activeIndex++;

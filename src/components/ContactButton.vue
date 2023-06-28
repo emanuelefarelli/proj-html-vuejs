@@ -1,9 +1,11 @@
 <template>
     <div @click="this.itIsOpen = !this.itIsOpen" :class="(this.itIsOpen === false)? 'closed-contact':'open-contact'">
+        <!-- QUANDO IL CONTATTO VIENE CHIUSO -->
         <div v-if="this.itIsOpen === false">
             <i class="fa-solid fa-phone"></i>
         </div>
 
+        <!-- QUANDO IL CONTATTO VIENE APERTO -->
         <div v-else>
             <img src="https://freepngimg.com/save/22654-man/594x600" alt="Contact photo">
             <h2>
