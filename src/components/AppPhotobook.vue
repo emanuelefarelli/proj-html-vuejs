@@ -72,8 +72,6 @@
             openFullScreenImg(index){
                 this.activeIndex = index;
                 this.FullScreenImgs = true;
-                console.log(this.activeIndex);
-                console.log(this.FullScreenImgs);
             },
             changeActiveIndex(direction){
                 if(direction === true){
@@ -104,6 +102,7 @@
             @include flex();
             div.thumbnail{
                 width: calc(100% / 4);
+                height: 260px;
                 img{
                     width: 100%;
                 }

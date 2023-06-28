@@ -1,9 +1,9 @@
 <template>
-    <div v-if="store.PageStart === false">
-        <a href="#top">
-            <i class="fa-solid fa-chevron-up"></i>
-        </a>
-    </div>
+        <div v-if="store.PageStart === false">
+            <a href="#top">
+                <i class="fa-solid fa-chevron-up"></i>
+            </a>
+        </div>
 </template>
     
 <script>
@@ -34,5 +34,10 @@ import {store} from '../store.js';
         a{
             color: $yellowColor;
         }
+    }
+    .slide-fade-enter-active {
+        transition: all 10s ease;
+        transform: translateX(10px);
+        opacity: 0;
     }
 </style>
