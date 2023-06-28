@@ -1,5 +1,6 @@
 <template>
     <main>
+        <PageUpButton/>
         <AppJumbotron/>
         <AppServices/>
         <AppPhotobook/>
@@ -12,6 +13,7 @@
 </template>
     
 <script>
+    import PageUpButton from './PageUpButton.vue';
     import AppJumbotron from './AppJumbotron.vue';
     import AppServices from './AppServices.vue';
     import AppPhotobook from './AppPhotobook.vue';
@@ -20,7 +22,6 @@
     import AppEvents from './AppEvents.vue'
     import AppNews from './AppNews.vue'
     import AppFooter from './AppFooter.vue';
-    
 
     export default{
         name: 'AppMain',
@@ -29,6 +30,7 @@
             }
         },
         components: {
+            PageUpButton,
             AppJumbotron,
             AppServices,
             AppPhotobook,

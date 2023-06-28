@@ -31,6 +31,7 @@
 </template>
 
 <script>
+import { store } from '../store.js';
     export default{
         name: 'AppHeader',
         data(){
@@ -65,14 +66,19 @@
                         title: 'Contact Us',
                         link: '#'
                     },
+                    store,
                 ]
             }
         },
         methods: {
             IsPageUp(){
                 if(globalThis.scrollY <= 0){
+                    store.PageStart = true;
                     this.PageStart = true;
-                }else{this.PageStart = false};
+                }else{
+                    store.PageStart = false;
+                    this.PageStart = false;
+                };
             }
         },
         mounted(){
