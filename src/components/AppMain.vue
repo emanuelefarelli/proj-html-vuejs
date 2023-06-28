@@ -1,5 +1,6 @@
 <template>
     <main>
+        <ContactButton/>
         <PageUpButton/>
         <AppJumbotron/>
         <AppServices/>
@@ -13,6 +14,7 @@
 </template>
     
 <script>
+    import ContactButton from './ContactButton.vue';
     import PageUpButton from './PageUpButton.vue';
     import AppJumbotron from './AppJumbotron.vue';
     import AppServices from './AppServices.vue';
@@ -30,6 +32,7 @@
             }
         },
         components: {
+            ContactButton,
             PageUpButton,
             AppJumbotron,
             AppServices,
